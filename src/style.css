@@ -1,0 +1,11 @@
+.card-body {
+  visibility: hidden;
+}
+
+#sidebar:checked ~ .card > figure > img {
+  visibility: visible;
+}
+
+#sidebar:checked ~ .card-body {
+  visibility: visible;
+}
