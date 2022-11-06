@@ -7,7 +7,17 @@ body {
 }
 .intro {
   font-family: "Noto Sans KR", sans-serif;
-  margin-top: 1000px;
-  margin-bottom: 1000px;
+  margin-top: 700px;
+  margin-bottom: 700px;
   letter-spacing: 0.5rem;
+}
+
+[data-scroll] {
+  transition: opacity 1s;
+}
+[data-scroll="in"] {
+  opacity: 1;
+}
+[data-scroll="out"] {
+  opacity: 0;
 }
