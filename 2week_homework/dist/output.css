@@ -548,8 +548,23 @@ video {
   display: flex;
 }
 
+.h-4 {
+  height: 1rem;
+}
+
 .justify-center {
   justify-content: center;
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.from-black {
+  --tw-gradient-from: #000;
+  --tw-gradient-to: rgb(0 0 0 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .text-5xl {

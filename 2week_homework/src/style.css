@@ -2,16 +2,15 @@
 
 /* font-family: 'Noto Sans KR', sans-serif; */
 
-body {
-  background-color: black;
-}
 .intro {
   font-family: "Noto Sans KR", sans-serif;
-  margin-top: 700px;
-  margin-bottom: 700px;
   letter-spacing: 0.5rem;
+  height: 700px;
 }
 
+p {
+  text-align: center;
+}
 [data-scroll] {
   transition: opacity 2s;
 }
@@ -20,4 +19,14 @@ body {
 }
 [data-scroll="out"] {
   opacity: 0;
+}
+
+.gradient {
+  width: auto;
+  height: 1400px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 0.35159817351598177) 50%
+  );
 }
