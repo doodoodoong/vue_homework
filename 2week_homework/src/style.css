@@ -52,3 +52,8 @@ img {
   overflow: hidden;
   object-fit: cover;
 }
+
+.btn-container {
+  margin: 10px;
+  text-align: center;
+}
