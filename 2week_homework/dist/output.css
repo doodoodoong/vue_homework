@@ -510,6 +510,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 .flex {
   display: flex;
 }

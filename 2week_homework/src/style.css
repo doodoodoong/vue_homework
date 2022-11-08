@@ -38,10 +38,11 @@ p {
 .board {
   height: 400px;
   overflow: hidden;
+  border: 1px rgba(255, 255, 255, 0.35159817351598177), solid;
 }
 
 .board > div {
-  border: 1px gray solid;
+  border: 0.5px, gray, solid;
   cursor: pointer;
 }
 
