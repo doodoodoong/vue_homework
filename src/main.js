@@ -1,3 +1,7 @@
-let intro = document.querySelectorAll(".intro");
+let observer = new IntersectionObserver((e) => {
+  e.forEach((i) => {
+    i.target.style.opacity = 1;
+  });
+});
 
-console.log(intro);
+let intro = document.querySelectorAll(".intro");
