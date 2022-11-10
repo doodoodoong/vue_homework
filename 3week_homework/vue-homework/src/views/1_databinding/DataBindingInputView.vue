@@ -7,6 +7,10 @@
     <input type="text" v-model="num1" /> +
     <input type="text" v-model="num2" /> =
     <span>{{ num1 + num2 }}</span>
+    <br />
+    <input type="text" v-model.number="num3" /> +
+    <input type="text" v-model.number="num4" /> =
+    <span>{{ num3 + num4 }}</span>
   </div>
 </template>
 <script>
