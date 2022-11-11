@@ -2,27 +2,21 @@
   <div>
     <div>
       <input
-        type="checkbox"
+        type="radio"
         name=""
         id="html"
         value="HTML"
         v-model="favoriteLang"
       />
-      <label for="html">html</label>
+      <label for="html">HTML</label>
     </div>
     <div>
-      <input
-        type="checkbox"
-        name=""
-        id="css"
-        value="CSS"
-        v-model="favoriteLang"
-      />
+      <input type="radio" name="" id="css" value="CSS" v-model="favoriteLang" />
       <label for="css">CSS</label>
     </div>
     <div>
       <input
-        type="checkbox"
+        type="radio"
         name=""
         id="javascript"
         value="JS"
@@ -37,7 +31,7 @@
 export default {
   data() {
     return {
-      favoriteLang: []
+      favoriteLang: ''
     }
   }
 }
