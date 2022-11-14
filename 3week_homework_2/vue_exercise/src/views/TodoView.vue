@@ -1,20 +1,36 @@
 <template>
-  <div class="container">
-    <h1>To-do List</h1>
-    <h2>Now..Your todo is... {{ todo }}</h2>
-    <p class="complete_count">
+  <div class="bowl">
+    <h1 class="text-5xl m-4">To-do List</h1>
+    <h2 class="text-3xl p-5 m-4">Now..Your todo is... {{ todo }}</h2>
+    <p class="complete_count text-2xl m-4">
       Your Complete is : {{ completedTodoList.length }}
     </p>
 
     <h2 class="alert" v-if="falseTodoList.length > 5">Hurry up!</h2>
     <h2 v-if="completedTodoList.length > 10">Go to Home! Workerholic</h2>
-    <input type="text" id="todo_input" v-model="todo" @keyup.enter="plusTodo" />
-    <button @click="plusTodo">To-do Plus!</button>
+    <input
+      class="m-5 p-1 rounded"
+      type="text"
+      id="todo_input"
+      v-model="todo"
+      @keyup.enter="plusTodo"
+    />
+    <button
+      class="border border-yellow-900 rounded p-1 bg-yellow-900 text-white"
+      @click="plusTodo"
+    >
+      To-do Plus!
+    </button>
     <br />
     <br />
     <li class="list" v-for="todo in falseTodoList" :key="todo">
       {{ todo.name }}
-      <button @click="completeTodo(todo)">Complete!</button>
+      <button
+        class="border border-yellow-900 rounded p-1 bg-yellow-900 text-white m-2"
+        @click="completeTodo(todo)"
+      >
+        Complete!
+      </button>
     </li>
   </div>
 </template>
@@ -50,7 +66,7 @@ export default {
 }
 </script>
 <style scoped>
-.container {
+.bowl {
   width: 100vw;
   height: 100vh;
 }

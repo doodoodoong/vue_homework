@@ -1,7 +1,7 @@
 <template>
-  <div class="container">
-    <h1>Your School Life</h1>
-    <p class="content">
+  <div class="bowl">
+    <h1 class="text-6xl text-center">Your School Life</h1>
+    <p class="content p-5">
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et perspiciatis
       excepturi distinctio quas, laudantium labore quibusdam officia recusandae
       blanditiis deleniti laborum voluptas molestias mollitia veritatis minima
@@ -17,7 +17,7 @@ export default {}
 .content {
   text-align: left;
 }
-.container {
+.bowl {
   width: 100vw;
   height: 100vh;
 }
