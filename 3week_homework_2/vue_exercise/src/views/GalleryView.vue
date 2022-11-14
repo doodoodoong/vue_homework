@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="text-8xl">Your mousecursor under hover</h1>
+    <h1 class="text-6xl">Your Cursor Hover The Box</h1>
   </div>
   <div class="board flex gap-1 m-5">
     <div class="flex-1 invisible"></div>
@@ -38,6 +38,7 @@ export default {}
 }
 .board > div {
   cursor: pointer;
+  height: 80%;
 }
 
 img {
@@ -51,7 +52,6 @@ img {
 div:hover > img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
   transition-duration: 1s;
 }
 </style>

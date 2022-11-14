@@ -1,6 +1,6 @@
 <template>
   <div class="bowl">
-    <h1 class="text-5xl m-4">To-do List</h1>
+    <h1 class="text-6xl m-4">To-do List</h1>
     <h2 class="text-3xl p-5 m-4">Now..Your todo is... {{ todo }}</h2>
     <p class="complete_count text-2xl m-4">
       Your Complete is : {{ completedTodoList.length }}
