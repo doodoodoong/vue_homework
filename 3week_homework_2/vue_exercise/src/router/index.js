@@ -14,10 +14,10 @@ const routes = [
       import(/* webpackChunkName: "about" */ '../views/TodoView.vue')
   },
   {
-    path: '/consulting',
-    name: 'CounsulgtingView',
+    path: '/gallery',
+    name: 'GalleryView',
     component: () =>
-      import(/* webpackChunkNmae: "consulting" */ '../views/ConsultingView.vue')
+      import(/* webpackChunkNmae: "gallery" */ '../views/GalleryView.vue')
   }
 ]
 

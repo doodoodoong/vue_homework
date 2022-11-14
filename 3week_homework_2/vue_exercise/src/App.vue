@@ -2,18 +2,25 @@
   <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/todo">To-do</router-link> |
-    <router-link to="/consulting">Cunsulting</router-link>
+    <router-link to="/gallery">Gallery</router-link>
   </nav>
   <router-view />
 </template>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;1,700&display=swap');
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Roboto Mono', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #3a1412;
+  background-image: linear-gradient(
+    45deg,
+    #ff9a9e 0%,
+    #fad0c4 99%,
+    #fad0c4 100%
+  );
 }
 
 nav {
@@ -22,10 +29,11 @@ nav {
 
 nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #b39275;
 }
 
 nav a.router-link-exact-active {
-  color: #12a4d9;
+  /* color: #be9275; */
+  color: #ed2d7b;
 }
 </style>

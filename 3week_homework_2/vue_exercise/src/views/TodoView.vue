@@ -1,18 +1,18 @@
 <template>
-  <div>
+  <div class="container">
     <h1>To-do List</h1>
-  </div>
-  <div>
-    <h2>Today todo is... {{ todo }}</h2>
-    <span>Your Complete is : {{ completedTodoList.length }}</span>
-    <br />
-    <h2 v-if="falseTodoList.length > 5">Hurry up!</h2>
+    <h2>Now..Your todo is... {{ todo }}</h2>
+    <p class="complete_count">
+      Your Complete is : {{ completedTodoList.length }}
+    </p>
+
+    <h2 class="alert" v-if="falseTodoList.length > 5">Hurry up!</h2>
     <h2 v-if="completedTodoList.length > 10">Go to Home! Workerholic</h2>
     <input type="text" id="todo_input" v-model="todo" @keyup.enter="plusTodo" />
     <button @click="plusTodo">To-do Plus!</button>
     <br />
     <br />
-    <li v-for="todo in falseTodoList" :key="todo">
+    <li class="list" v-for="todo in falseTodoList" :key="todo">
       {{ todo.name }}
       <button @click="completeTodo(todo)">Complete!</button>
     </li>
@@ -49,4 +49,19 @@ export default {
   }
 }
 </script>
-<style scoped></style>
+<style scoped>
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+.complete_count {
+  margin: 20px;
+}
+.alert {
+  font-size: xx-large;
+  color: black;
+  font-weight: 900;
+}
+.list {
+}
+</style>
