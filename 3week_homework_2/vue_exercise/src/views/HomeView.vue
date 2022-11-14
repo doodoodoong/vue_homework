@@ -7,11 +7,18 @@
       blanditiis deleniti laborum voluptas molestias mollitia veritatis minima
       voluptatibus quidem nemo cum!
     </p>
+    <p></p>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      counter: { count: 0 }
+    }
+  }
+}
 </script>
 <style scoped>
 .content {
