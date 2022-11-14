@@ -6,7 +6,9 @@
   </nav>
   <router-view />
 </template>
-
+<script>
+export default {}
+</script>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;1,700&display=swap');
 #app {
