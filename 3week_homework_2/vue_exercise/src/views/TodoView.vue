@@ -78,6 +78,4 @@ export default {
   color: black;
   font-weight: 900;
 }
-.list {
-}
 </style>
